@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+<!--    <com.google.android.gms.ads.AdView-->
+<!--        android:id="@+id/adView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        app:adSize="BANNER"-->
+<!--        app:adUnitId="ca-app-pub-6230379142169750/2656987653">-->
+
+<!--    </com.google.android.gms.ads.AdView>-->
+
+    <ImageView
+        android:id="@+id/volume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_gravity="end"
+        app:srcCompat= "@drawable/volume"/>
+
+    <LinearLayout
+        android:layout_width="550dp"
+        android:layout_height="210dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginRight="1dp">
+
+        <ImageView
+            android:id="@+id/bird"
+            android:layout_width="153dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="90dp"
+            app:srcCompat="@drawable/happy" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="90dp"
+            android:fontFamily="serif-monospace"
+            android:rotationX="360"
+            android:text="Bird Game"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="60dp" />
+
+    </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:layout_marginLeft="350dp"-->
+<!--        android:paddingBottom="10dp"-->
+<!--        android:text="Bird Game"-->
+<!--        android:textSize="50dp" />-->
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="235dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="150dp"
+        android:background="@drawable/background_start_button"
+        android:text="Start Game"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp" />
+
+</LinearLayout>
